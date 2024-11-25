@@ -1,5 +1,5 @@
 {% set name = "LbExec" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lbexec-{{ version }}.tar.gz
-  sha256: 38e02df4cc773c0ddcc75a391560be9df852f3d189c9bf902bd9d828b7541a17
+  sha256: d1f20384ce01695b08f6d4d884548545fcf44fda00b0c7e32af61e4e41c80f05
 
 build:
   entry_points:
