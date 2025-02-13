@@ -1,5 +1,5 @@
 {% set name = "LbExec" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lbexec-{{ version }}.tar.gz
-  sha256: 8fb4ec8f4f39f12a355c7058ba5a95da62d5959a13c50eb725f70292d2c550e2
+  sha256: 2720892f6ba6e786da96caca0cb0743fbe6635c61ac77fc0b827d46414310c67
 
 build:
   entry_points:
     - lbexec = LbExec.__main__:parse_args
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
