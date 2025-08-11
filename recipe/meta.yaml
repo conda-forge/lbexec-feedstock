@@ -1,5 +1,5 @@
 {% set name = "LbExec" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lbexec-{{ version }}.tar.gz
-  sha256: 32dcb99ccfaf29eae3c5dc6b138003d755f633b83434c25d19488a10df92cac8
+  sha256: 7c185cf806d293e1601f8729fd908f89a4e448d7f641a4b4aa4d566a6f7fc273
 
 build:
   entry_points:
