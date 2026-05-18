@@ -1,5 +1,5 @@
 {% set name = "LbExec" %}
-{% set version = "0.9.6" %}
+{% set version = "0.9.8" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lbexec-{{ version }}.tar.gz
-  sha256: 19dac9fcbeb45404c1cae08512184f78b5dddc778d1fa8375f065469bbeb0672
+  sha256: 9ba13d35118807ce73b9fac49e6e4c4e5bb4a7ad1548c8eed73f70321da7d823
 
 build:
   entry_points:
@@ -29,6 +29,7 @@ requirements:
     - lbenv
     - pydantic >=2
     - typer >=0.4.1
+    - typer-slim
     - packaging
     - pyyaml >=6.0
     - uproot
