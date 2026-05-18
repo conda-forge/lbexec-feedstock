@@ -29,6 +29,7 @@ requirements:
     - lbenv
     - pydantic >=2
     - typer >=0.4.1
+    - typer-slim
     - packaging
     - pyyaml >=6.0
     - uproot
